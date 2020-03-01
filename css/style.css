@@ -16,7 +16,8 @@ li:hover{
     color: #02a9d3 !important;
 }
 
-
+.zoomContainer{ z-index: 9999 !important;}
+.zoomWindow{ z-index: 9999 !important;}
 
 
 
