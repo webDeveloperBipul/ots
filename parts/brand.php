@@ -24,7 +24,7 @@
                                 <a href=""><img src="images/logos/logo-6.png" alt=""></a>
                             </div>
                             <div class="block-brands__item">
-                                <a href=""><img src="images/logos/logo-7.png" alt=""></a>
+                                <a href=""><img src="images/logos/logo-5.png" alt=""></a>
                             </div>
                         </div>
                     </div>

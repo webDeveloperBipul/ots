@@ -1,8 +1,6 @@
 
 
 
-@import url('https://cdn.rawgit.com/sh4hids/bangla-web-fonts/bangla/stylesheet.css');
-
 @keyframes a {
     0% {
         transform: rotate(0deg)
@@ -13,8 +11,9 @@
 }
 
 /* custom css */
-.fas{
-    color: #5f7592 !important;
+
+.fa-chevron-up{
+    color: rgb(255, 255, 255) !important;
 }
 
 
@@ -22,7 +21,9 @@
 .zoomContainer{ z-index: 9999 !important;}
 .zoomWindow{ z-index: 9999 !important;}
 
-
+button{
+    focus: none !important;
+}
 
 body,
 html {
@@ -32,9 +33,8 @@ html {
 
 
 body {
-    font-family: 'bangla', sans-serif  !important;
     font-size: 20px !important;
-    font-weight: 400;
+    font-weight: bold;
     line-height: 1.5;
     background: #fff;
     color: #3d464d;
@@ -2384,41 +2384,19 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
     background: #fff
 }
 
-.product-card:before {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    pointer-events: none;
-    border-radius: 2px;
-    box-shadow: inset 0 0 0 1px #ededed;
-    transition: box-shadow .2s
-}
 
-.product-card:hover:before {
-    transition-duration: 0s;
-    box-shadow: inset 0 0 0 2px #e5e5e5;
-    z-index: 2
+
+.product-card .product-card__quickview {
+   
+    display:none;
 }
 
 .product-card:hover .product-card__quickview {
-    transition-duration: 0s, 0s;
-    background: #e5e5e5
+    display:block;
+    background-color: #ddd;
 }
 
-.product-card:hover .product-card__quickview:not(.product-card__quickview--preload) {
-    color: #3d464d
-}
 
-.product-card:hover .product-card__quickview:not(.product-card__quickview--preload):hover {
-    transition-duration: .2s, .2s;
-    background: #3d464d;
-    color: #fff
-}
 
 .product-card__image {
     padding: 18px;
@@ -2557,7 +2535,8 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
 }
 
 .product-card__prices {
-    margin-top: 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     line-height: 1;
     font-weight: 700;
     color: #3d464d
@@ -2574,19 +2553,6 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
     text-decoration: line-through
 }
 
-.product-card__buttons {
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 24px
-}
-
-.product-card__buttons>:first-child {
-    margin-right: auto
-}
-
-.product-card__buttons>*+* {
-    margin-left: 4px
-}
 
 .product-card__addtocart--list {
     display: none
@@ -2611,7 +2577,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
     content: "";
     display: block;
     position: absolute;
-    top: 9px;
+    top: 0px;
     width: 5px;
     height: 5px;
     border-radius: 2.5px;
@@ -2620,7 +2586,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
 }
 
 .product-card__badges-list {
-    top: 18px;
+  
     position: absolute;
     display: -ms-flexbox;
     display: flex;
@@ -2629,7 +2595,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
     -ms-flex-align: start;
     align-items: flex-start;
     z-index: 1;
-    left: 18px
+    left: 0
 }
 
 .product-card__badge {
@@ -5288,9 +5254,9 @@ screen and (-ms-high-contrast:active) {
 }
 
 .nav-links__item--has-submenu .nav-links__item-arrow {
-    position: absolute;
+    position: absolute!important;
     fill: rgba(0, 0, 0, .25);
-    right: 12px
+    right: 12px;
 }
 
 .nav-links__item--hover .nav-links__item-link {
@@ -5372,7 +5338,7 @@ screen and (-ms-high-contrast:active) {
 
 .nav-panel {
     height: 54px;
-    background: #47991f;
+    background: #076986;
     box-shadow: 0 1px rgba(0, 0, 0, .04), inset 0 -1px rgba(0, 0, 0, .04);
     color: #fff
 }
@@ -6513,7 +6479,7 @@ screen and (-ms-high-contrast:active) {
     padding: 0;
     border: none;
     cursor: pointer;
-    color: #fff;
+    color: #fff ;
     background: #47991f;
     fill: currentColor;
     -ms-flex-negative: 0;
@@ -6525,6 +6491,10 @@ screen and (-ms-high-contrast:active) {
 
 .totop__button:focus {
     outline: none
+}
+
+.totop__button i{
+    color:#fff !important;
 }
 
 @media (hover:hover) {

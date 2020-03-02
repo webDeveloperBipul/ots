@@ -14,14 +14,41 @@
     <link rel="stylesheet" href="vendor/owl-carousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="vendor/select2/css/select2.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
     <!-- font - fontawesome -->
-    <link href="https://fonts.maateen.me/adorsho-lipi/font.css" rel="stylesheet">
+    <link href="https://fonts.maateen.me/siyam-rupali/font.css" rel="stylesheet">
+    <link href="https://fonts.maateen.me/siyam-rupali/font.css" rel="stylesheet">
     <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
     <!-- font - stroyka -->
     <link rel="stylesheet" href="fonts/stroyka/stroyka.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/elevatezoom/3.0.8/jquery.elevatezoom.min.js"></script>
     
+
+<style>
+body {
+    font-family: 'SiyamRupali', 'sans-serif' !important;
+}
+.nav-panel{
+    background: #370 !important;
+}
+.fa-color{
+    color: #370 !important;
+}
+.block-header__arrow i{
+    color: #370;
+}
+.block-header__arrow:hover{
+    background: #ddd;
+}
+.block-header__arrow:focus{
+    background: #ddd;
+}
+.btn.btn-info.btn-xs {
+    padding: 0 30px !important;
+}
+
+</style>
 
 </head>
 
@@ -105,7 +132,7 @@
                     </div>
                     <div class="site-header__phone">
                         <div class="site-header__phone-title">হটলাইন</div>
-                        <div class="site-header__phone-number">(+880) 1950481587</div>
+                        <div class="site-header__phone-number">+880 1950481587</div>
                     </div>
                 </div>
                 <div class="site-header__nav-panel">
