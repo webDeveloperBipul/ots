@@ -37,7 +37,7 @@
                             <i class="fas fa-color fa-check-circle fa-2x"></i>
                             </div>
                             <div class="block-features__content">
-                                <div class="block-features__title">১০০% পরিক্ষীত পণ্য</div>
+                                <div class="block-features__title">১০০% পরীক্ষিত পণ্য</div>
                                 <div class="block-features__subtitle">৭ দিনের মধ্যে পরিবর্তন</div>
                             </div>
                         </div>

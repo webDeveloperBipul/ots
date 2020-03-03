@@ -126,10 +126,12 @@
         borderSize		: 2,
         zoomWindowPosition	: 2,
         lensOpacity     : .3,
-        lensBorder      : 0
+        lensBorder      : 0,
+        responsive : true
 
       });
     });
+ 
   </script>
 
     
