@@ -1209,6 +1209,7 @@ screen and (-ms-high-contrast:active) {
     }
 }
 
+
 .form-control {
     border-radius: 2px;
     line-height: 1.25
@@ -1225,12 +1226,7 @@ screen and (-ms-high-contrast:active) {
     line-height: 1.25
 }
 
-.form-control.is-invalid,
-.form-control.is-valid,
-.form-control:invalid,
-.form-control:valid {
-    background-image: none
-}
+
 
 select.form-control {
     -webkit-appearance: none;

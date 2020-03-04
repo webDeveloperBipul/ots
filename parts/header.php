@@ -24,6 +24,7 @@ session_start();
     <link href="https://fonts.maateen.me/siyam-rupali/font.css" rel="stylesheet">
     <link href="https://fonts.maateen.me/siyam-rupali/font.css" rel="stylesheet">
     <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="vendor/select/bootstrap-select.min.css">
     <!-- font - stroyka -->
     <link rel="stylesheet" href="fonts/stroyka/stroyka.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -52,11 +53,53 @@ body {
 .btn.btn-info.btn-xs {
     padding: 0 30px !important;
 }
-
+.header_light_color{
+    background: #eaffd2;
+}
+textarea:focus, 
+textarea.form-control:focus, 
+input.form-control:focus, 
+input[type=text]:focus, 
+input[type=password]:focus, 
+input[type=email]:focus, 
+input[type=number]:focus, 
+[type=text].form-control:focus, 
+[type=password].form-control:focus, 
+[type=email].form-control:focus, 
+[type=tel].form-control:focus, 
+[contenteditable].form-control:focus {
+  box-shadow: inset 0 -1px 0 #ddd;
+}
+.form-control.is-invalid, .form-control.is-valid, .form-control:invalid, .form-control:valid {
+    background-image: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+    
+    /* select css */
+select
+{
+    color: #ccc;
+}
+option
+{
+    color: #000;
+}
+option:first-child
+{
+    color: #ccc;
+}
+    
+}
+/* catagory css */
+select#catagory, #sub_catagory, #sub_sub_catagory {
+    border: none;
+    font-size: 16px;
+    color: #666;
+}
 </style>
 
 </head>
-
 
 
 <body>
@@ -218,35 +261,35 @@ if (isset($name,$password)) {
             <div class="menu menu--layout--topbar menu--with-icons">
                 <div class="menu__submenus-container"></div>
                 <ul class="menu__list">
-                    <li class="menu__item">
+                    <li class="menu__item mb-2">
                         <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
-                        <div class="menu__item-submenu-offset"></div>
-                        <a class="menu__item-link" href="">
-                            <div class="menu__item-icon"><img srcset="images/languages/language-1.png, images/languages/language-1@2x.png 2x" src="images/languages/language-1.png" alt=""></div>English</a>
+                        <div class="menu__item-submenu-offset text-center"></div>
+                            <div class="menu__item-icon"><img srcset="images/languages/language-1.png, images/languages/language-1@2x.png 2x" src="images/languages/language-1.png" alt=""></div>
+                        <div class="text-center"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModal" data-whatever="@mdo">প্রোডাক্ট</button></div>
                     </li>
-                    <li class="menu__item">
+                    <li class="menu__item mb-2">
                         <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
-                        <div class="menu__item-submenu-offset"></div>
-                        <a class="menu__item-link" href="">
-                            <div class="menu__item-icon"><img srcset="images/languages/language-2.png, images/languages/language-2@2x.png 2x" src="images/languages/language-2.png" alt=""></div>French</a>
+                        <div class="menu__item-submenu-offset text-center"></div>
+                            <div class="menu__item-icon"><img srcset="images/languages/language-1.png, images/languages/language-1@2x.png 2x" src="images/languages/language-1.png" alt=""></div>
+                        <div class="text-center"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#catagory_modal" data-whatever="@mdo">প্রোডাক্ট</button></div>
                     </li>
-                    <li class="menu__item">
+                    <li class="menu__item mb-2">
                         <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
-                        <div class="menu__item-submenu-offset"></div>
-                        <a class="menu__item-link" href="">
-                            <div class="menu__item-icon"><img srcset="images/languages/language-3.png, images/languages/language-3@2x.png 2x" src="images/languages/language-3.png" alt=""></div>German</a>
+                        <div class="menu__item-submenu-offset text-center"></div>
+                            <div class="menu__item-icon"><img srcset="images/languages/language-1.png, images/languages/language-1@2x.png 2x" src="images/languages/language-1.png" alt=""></div>
+                        <div class="text-center"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sub_catagory_modal" data-whatever="@mdo">প্রোডাক্ট</button></div>
                     </li>
-                    <li class="menu__item">
+                    <li class="menu__item mb-2">
                         <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
-                        <div class="menu__item-submenu-offset"></div>
-                        <a class="menu__item-link" href="">
-                            <div class="menu__item-icon"><img srcset="images/languages/language-4.png, images/languages/language-4@2x.png 2x" src="images/languages/language-4.png" alt=""></div>Russian</a>
+                        <div class="menu__item-submenu-offset text-center"></div>
+                            <div class="menu__item-icon"><img srcset="images/languages/language-1.png, images/languages/language-1@2x.png 2x" src="images/languages/language-1.png" alt=""></div>
+                        <div class="text-center"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModal" data-whatever="@mdo">প্রোডাক্ট</button></div>
                     </li>
-                    <li class="menu__item">
+                    <li class="menu__item mb-2">
                         <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
-                        <div class="menu__item-submenu-offset"></div>
-                        <a class="menu__item-link" href="">
-                            <div class="menu__item-icon"><img srcset="images/languages/language-5.png, images/languages/language-5@2x.png 2x" src="images/languages/language-5.png" alt=""></div>Italian</a>
+                        <div class="menu__item-submenu-offset text-center"></div>
+                            <div class="menu__item-icon"><img srcset="images/languages/language-1.png, images/languages/language-1@2x.png 2x" src="images/languages/language-1.png" alt=""></div>
+                        <div class="text-center"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModal" data-whatever="@mdo">প্রোডাক্ট</button></div>
                     </li>
                 </ul>
             </div>

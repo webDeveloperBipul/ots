@@ -89,8 +89,8 @@
         <!-- site__footer / end -->
     </div>
     <!-- site / end -->
-
-    
+ 
+    <?php include('parts/modal.php'); ?>
 
     <!-- js -->  
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -108,12 +108,16 @@
     <script defer src="vendor/fontawesome/js/brands.js"></script>
     <script defer src="vendor/fontawesome/js/solid.js"></script>
     <script defer src="vendor/fontawesome/js/fontawesome.min.js"></script>
+    <script defer src="vendor/select/bootstrap-select.min.js"></script>
     <script>
         svg4everybody();
     </script>
 </body>
 
 </html>   
+
+
+<?php include('parts/catagory.php'); ?>
 
 <script>
     $(document).ready(function() {
@@ -133,5 +137,10 @@
     });
  
   </script>
-
+<script type="text/javascript">
+    function changeMe(sel)
+    {
+      sel.style.color = "#000";              
+    }
+</script>
     
