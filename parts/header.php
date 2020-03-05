@@ -10,7 +10,7 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <title>Stroyka</title>
+    <title>amtola.com - one of Largest Online Market</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <!-- fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i">
@@ -93,6 +93,11 @@ option:first-child
 }
 /* catagory css */
 select#catagory, #sub_catagory, #sub_sub_catagory {
+    border: none;
+    font-size: 16px;
+    color: #666;
+}
+select#garanty, #yesOrNo, #month {
     border: none;
     font-size: 16px;
     color: #666;

@@ -89,6 +89,20 @@
         <!-- site__footer / end -->
     </div>
     <!-- site / end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
  
     <?php include('parts/modal.php'); ?>
 
@@ -122,7 +136,8 @@
 <script>
     $(document).ready(function() {
       $('#zoom_01,#zoom_02').elevateZoom({
-        lensSize	       :10000,
+        zoomWindowWidth 	: 600,
+
         zoomWindowFadeIn	: 200,
         zoomWindowFadeOut	: 300,
         lensFadeIn		: 200,
@@ -143,4 +158,38 @@
       sel.style.color = "#000";              
     }
 </script>
-    
+
+
+
+<script  >
+            function check_blank() {
+              var name =document.getElementById('m_name').value;
+              var phone =document.getElementById('phone_no').value;
+              var date =document.getElementById('datepicker').value;
+              var loan_amount =document.getElementById('loan_amount').value;
+              var profit_amount =document.getElementById('profit_amount').value;
+              if(name == "", phone == "", date == "", loan_amount == '', profit_amount == '' ){
+                Swal.fire({
+                  title: '<strong>গুরুত্বপূর্ণ ঘরগুলো পূরন করুন</strong>',
+                  type: 'info',
+                  html:
+                  '<b>নাম, মোবাইল নাম্বার, তারিখ, ঋণের পরিমাণ ইত্যাদি পরবর্তীতে প্রয়োজন হতে পারে</b>' 
+                  ,
+                  showCloseButton: true,
+                  focusConfirm: true,
+                  confirmButtonText:
+                  ' OK ',
+                  confirmButtonAriaLabel: 'Thumbs up, great!',
+                }
+                         )
+                return false;
+              }
+              else{
+                Swal.fire(
+                  'তথ্য নিবন্ধিত হয়েছে',
+                  'Ok!',
+                  'success'
+                );
+              }
+            }
+          </script>
