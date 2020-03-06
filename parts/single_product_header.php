@@ -1,8 +1,3 @@
-
-<?php 
-session_start();
-?>
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -10,110 +5,32 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <title>Product Masti - one of Largest Online Market</title>
+    <title>Stroyka</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <!-- fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i">
     <!-- css -->
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendor/owl-carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/photoswipe/photoswipe.css">
+    <link rel="stylesheet" href="vendor/photoswipe/default-skin/default-skin.css">
     <link rel="stylesheet" href="vendor/select2/css/select2.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.css" />
     <!-- font - fontawesome -->
-    <link href="https://fonts.maateen.me/siyam-rupali/font.css" rel="stylesheet">
-    <link href="https://fonts.maateen.me/siyam-rupali/font.css" rel="stylesheet">
     <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="vendor/select/bootstrap-select.min.css">
     <!-- font - stroyka -->
     <link rel="stylesheet" href="fonts/stroyka/stroyka.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/elevatezoom/3.0.8/jquery.elevatezoom.min.js"></script>
-    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-97489509-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-<style>
-body {
-    font-family: 'SiyamRupali', 'sans-serif' !important;
-   
-}
-.nav-panel{
-    background: #370 !important;
-}
-.fa-color{
-    color: #370 !important;
-}
-.block-header__arrow i{
-    color: #370;
-}
-.block-header__arrow:hover{
-    background: #ddd;
-}
-.block-header__arrow:focus{
-    background: #ddd;
-}
-.btn.btn-info.btn-xs {
-    padding: 0 30px !important;
-}
-.header_light_color{
-    background: #eaffd2;
-}
-textarea:focus, 
-textarea.form-control:focus, 
-input.form-control:focus, 
-input[type=text]:focus, 
-input[type=password]:focus, 
-input[type=email]:focus, 
-input[type=number]:focus, 
-[type=text].form-control:focus, 
-[type=password].form-control:focus, 
-[type=email].form-control:focus, 
-[type=tel].form-control:focus, 
-[contenteditable].form-control:focus {
-  box-shadow: inset 0 -1px 0 #ddd;
-}
-.form-control.is-invalid, .form-control.is-valid, .form-control:invalid, .form-control:valid {
-    background-image: none !important;
-    border-left: none !important;
-    border-right: none !important;
-    border-top: none !important;
-    
-    /* select css */
-select
-{
-    color: #ccc;
-}
-option
-{
-    color: #000;
-}
-option:first-child
-{
-    color: #ccc;
-}
-    
-}
-/* catagory css */
-select#catagory, #sub_catagory, #sub_sub_catagory {
-    border: none;
-    font-size: 16px;
-    color: #666;
-}
-select#garanty, #yesOrNo, #month {
-    border: none;
-    font-size: 16px;
-    color: #666;
-}
-i.fas.fa-caret-right.mb-2 {
-    font-size: 18px;
-    position: absolute;
-    right: 12px;
-    top: 1px;
-}
-</style>
-
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-97489509-6');
+    </script>
 </head>
-
 
 <body>
     <!-- site -->
@@ -131,17 +48,39 @@ i.fas.fa-caret-right.mb-2 {
                                 </svg>
                             </button>
                             <a class="mobile-header__logo" href="index.html">
-                              
+                                <svg xmlns="http://www.w3.org/2000/svg" width="120px" height="20px">
+                                    <path d="M118.5,20h-1.1c-0.6,0-1.2-0.4-1.4-1l-1.5-4h-6.1l-1.5,4c-0.2,0.6-0.8,1-1.4,1h-1.1c-1,0-1.8-1-1.4-2l1.1-3
+                                 l1.5-4l3.6-10c0.2-0.6,0.8-1,1.4-1h1.6c0.6,0,1.2,0.4,1.4,1l3.6,10l1.5,4l1.1,3C120.3,19,119.5,20,118.5,20z M111.5,6.6l-1.6,4.4
+                                 h3.2L111.5,6.6z M99.5,20h-1.4c-0.4,0-0.7-0.2-0.9-0.5L94,14l-2,3.5v1c0,0.8-0.7,1.5-1.5,1.5h-1c-0.8,0-1.5-0.7-1.5-1.5v-17
+                                 C88,0.7,88.7,0,89.5,0h1C91.3,0,92,0.7,92,1.5v8L94,6l3.2-5.5C97.4,0.2,97.7,0,98.1,0h1.4c1.2,0,1.9,1.3,1.3,2.3L96.3,10l4.5,7.8
+                                 C101.4,18.8,100.7,20,99.5,20z M80.3,11.8L80,12.3v6.2c0,0.8-0.7,1.5-1.5,1.5h-1c-0.8,0-1.5-0.7-1.5-1.5v-6.2l-0.3-0.5l-5.5-9.5
+                                 c-0.6-1,0.2-2.3,1.3-2.3h1.4c0.4,0,0.7,0.2,0.9,0.5L76,4.3l2,3.5l2-3.5l2.2-3.8C82.4,0.2,82.7,0,83.1,0h1.4c1.2,0,1.9,1.3,1.3,2.3
+                                 L80.3,11.8z M60,20c-5.5,0-10-4.5-10-10S54.5,0,60,0s10,4.5,10,10S65.5,20,60,20z M60,4c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6
+                                 S63.3,4,60,4z M47.8,17.8c0.6,1-0.2,2.3-1.3,2.3h-2L41,14h-4v4.5c0,0.8-0.7,1.5-1.5,1.5h-1c-0.8,0-1.5-0.7-1.5-1.5v-17
+                                 C33,0.7,33.7,0,34.5,0H41c0.3,0,0.7,0,1,0.1c3.4,0.5,6,3.4,6,6.9c0,2.4-1.2,4.5-3.1,5.8L47.8,17.8z M42,4.2C41.7,4.1,41.3,4,41,4h-3
+                                 c-0.6,0-1,0.4-1,1v4c0,0.6,0.4,1,1,1h3c0.3,0,0.7-0.1,1-0.2c0.3-0.1,0.6-0.3,0.9-0.5C43.6,8.8,44,7.9,44,7C44,5.7,43.2,4.6,42,4.2z
+                                  M29.5,4H25v14.5c0,0.8-0.7,1.5-1.5,1.5h-1c-0.8,0-1.5-0.7-1.5-1.5V4h-4.5C15.7,4,15,3.3,15,2.5v-1C15,0.7,15.7,0,16.5,0h13
+                                 C30.3,0,31,0.7,31,1.5v1C31,3.3,30.3,4,29.5,4z M6.5,20c-2.8,0-5.5-1.7-6.4-4c-0.4-1,0.3-2,1.3-2h1c0.5,0,0.9,0.3,1.2,0.7
+                                 c0.2,0.3,0.4,0.6,0.8,0.8C4.9,15.8,5.8,16,6.5,16c1.5,0,2.8-0.9,2.8-2c0-0.7-0.5-1.3-1.2-1.6C7.4,12,7,11,7.4,10.3l0.4-0.9
+                                 c0.4-0.7,1.2-1,1.8-0.6c0.6,0.3,1.2,0.7,1.6,1.2c1,1.1,1.7,2.5,1.7,4C13,17.3,10.1,20,6.5,20z M11.6,6h-1c-0.5,0-0.9-0.3-1.2-0.7
+                                 C9.2,4.9,8.9,4.7,8.6,4.5C8.1,4.2,7.2,4,6.5,4C5,4,3.7,4.9,3.7,6c0,0.7,0.5,1.3,1.2,1.6C5.6,8,6,9,5.6,9.7l-0.4,0.9
+                                 c-0.4,0.7-1.2,1-1.8,0.6c-0.6-0.3-1.2-0.7-1.6-1.2C0.6,8.9,0,7.5,0,6c0-3.3,2.9-6,6.5-6c2.8,0,5.5,1.7,6.4,4C13.3,4.9,12.6,6,11.6,6
+                                 z"></path>
+                                </svg>
                             </a>
                             <div class="search search--location--mobile-header mobile-header__search">
                                 <div class="search__body">
                                     <form class="search__form" action="">
-                                        <input class="search__input" name="search" placeholder="১০,০০০ পন্য থেকে আপনারটি খুঁজুন" aria-label="Site search" type="text" autocomplete="off">
+                                        <input class="search__input" name="search" placeholder="Search over 10,000 products" aria-label="Site search" type="text" autocomplete="off">
                                         <button class="search__button search__button--type--submit" type="submit">
-                                            
+                                            <svg width="20px" height="20px">
+                                                <use xlink:href="images/sprite.svg#search-20"></use>
+                                            </svg>
                                         </button>
                                         <button class="search__button search__button--type--close" type="button">
-                                            <i class="fas fa-search"></i>
+                                            <svg width="20px" height="20px">
+                                                <use xlink:href="images/sprite.svg#cross-20"></use>
+                                            </svg>
                                         </button>
                                         <div class="search__border"></div>
                                     </form>
@@ -161,171 +100,138 @@ i.fas.fa-caret-right.mb-2 {
             </div>
         </header>
         <!-- mobile site__header / end -->
-
-
-
-
-  <!-- desktop site__header -->
+        <!-- desktop site__header -->
         <header class="site__header d-lg-block d-none">
             <div class="site-header">
-
-
-<?php
-
-
-
-if (isset($_SESSION["name"])) {
-    $name = $_SESSION["name"];
-    $password = $_SESSION["password"];
-    
-}
-
-// Start the session
-
-if (isset($name,$password)) {
-
- ?>
- 
-<!-- topbar -->
-<div class="site-header__topbar topbar bg-dark text-white">
-<div class="topbar__container container">
-<div class="topbar__row">
-<div class="topbar__item topbar__item--link"><a class="topbar-link" href="about-us.html">About Us</a></div>
-<div class="topbar__item topbar__item--link"><a class="topbar-link" href="contact-us.html">Contacts</a></div>
-<div class="topbar__item topbar__item--link"><a class="topbar-link" href="">Store Location</a></div>
-<div class="topbar__item topbar__item--link"><a class="topbar-link" href="track-order.html">Track Order</a></div>
-<div class="topbar__item topbar__item--link"><a class="topbar-link" href="blog-classic.html">Blog</a></div>
-<div class="topbar__spring"></div>
-<div class="topbar__item">
-    <div class="topbar-dropdown">
-        <button class="topbar-dropdown__btn" type="button">My Account
-            <svg width="7px" height="5px">
-                <use xlink:href="images/sprite.svg#arrow-rounded-down-7x5"></use>
-            </svg>
-        </button>
-        <div class="topbar-dropdown__body">
-            <!-- .menu -->
-            <div class="menu menu--layout--topbar">
-                <div class="menu__submenus-container"></div>
-                <ul class="menu__list">
-                    <li class="menu__item">
-                        <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
-                        <div class="menu__item-submenu-offset"></div><a class="menu__item-link" href="account-dashboard.html">Dashboard</a></li>
-                    <li class="menu__item">
-                        <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
-                        <div class="menu__item-submenu-offset"></div><a class="menu__item-link" href="account-profile.html">Edit Profile</a></li>
-                    <li class="menu__item">
-                        <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
-                        <div class="menu__item-submenu-offset"></div><a class="menu__item-link" href="account-orders.html">Order History</a></li>
-                    <li class="menu__item">
-                        <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
-                        <div class="menu__item-submenu-offset"></div><a class="menu__item-link" href="account-addresses.html">Addresses</a></li>
-                    <li class="menu__item">
-                        <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
-                        <div class="menu__item-submenu-offset"></div><a class="menu__item-link" href="account-password.html">Password</a></li>
-                    <li class="menu__item">
-                        <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
-                        <div class="menu__item-submenu-offset"></div><a class="menu__item-link" href="account-login.html">Logout</a></li>
-                </ul>
-            </div>
-            <!-- .menu / end -->
-        </div>
-    </div>
-</div>
-<div class="topbar__item">
-    <div class="topbar-dropdown">
-        <button class="topbar-dropdown__btn" type="button">Currency: <span class="topbar__item-value">USD</span>
-            <svg width="7px" height="5px">
-                <use xlink:href="images/sprite.svg#arrow-rounded-down-7x5"></use>
-            </svg>
-        </button>
-        <div class="topbar-dropdown__body">
-            <!-- .menu -->
-            <div class="menu menu--layout--topbar">
-                <div class="menu__submenus-container"></div>
-                <ul class="menu__list">
-                    <li class="menu__item">
-                        <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
-                        <div class="menu__item-submenu-offset"></div><a class="menu__item-link" href="">€ Euro</a></li>
-                    <li class="menu__item">
-                        <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
-                        <div class="menu__item-submenu-offset"></div><a class="menu__item-link" href="">£ Pound Sterling</a></li>
-                    <li class="menu__item">
-                        <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
-                        <div class="menu__item-submenu-offset"></div><a class="menu__item-link" href="">$ US Dollar</a></li>
-                    <li class="menu__item">
-                        <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
-                        <div class="menu__item-submenu-offset"></div><a class="menu__item-link" href="">₽ Russian Ruble</a></li>
-                </ul>
-            </div>
-            <!-- .menu / end -->
-        </div>
-    </div>
-</div>
-<div class="topbar__item">
-    <div class="topbar-dropdown">
-        <button class="topbar-dropdown__btn" type="button">Add Product
-            <svg width="7px" height="5px">
-                <use xlink:href="images/sprite.svg#arrow-rounded-down-7x5"></use>
-            </svg>
-        </button>
-        <div class="topbar-dropdown__body">
-            <!-- .menu -->
-            <div class="menu menu--layout--topbar menu--with-icons">
-                <div class="menu__submenus-container"></div>
-                <ul class="menu__list">
-                    <li class="menu__item mb-2">
-                        <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
-                        <div class="menu__item-submenu-offset text-center"></div>
-                            <div class="menu__item-icon"><img srcset="images/languages/language-1.png, images/languages/language-1@2x.png 2x" src="images/languages/language-1.png" alt=""></div>
-                        <div class="text-center"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModal" data-whatever="@mdo">Product</button></div>
-                    </li>
-                    <li class="menu__item mb-2">
-                        <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
-                        <div class="menu__item-submenu-offset text-center"></div>
-                            <div class="menu__item-icon"><img srcset="images/languages/language-1.png, images/languages/language-1@2x.png 2x" src="images/languages/language-1.png" alt=""></div>
-                        <div class="text-center"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#catagory_modal" data-whatever="@mdo">Product</button></div>
-                    </li>
-                    <li class="menu__item mb-2">
-                        <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
-                        <div class="menu__item-submenu-offset text-center"></div>
-                            <div class="menu__item-icon"><img srcset="images/languages/language-1.png, images/languages/language-1@2x.png 2x" src="images/languages/language-1.png" alt=""></div>
-                        <div class="text-center"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sub_catagory_modal" data-whatever="@mdo">Product</button></div>
-                    </li>
-                    <li class="menu__item mb-2">
-                        <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
-                        <div class="menu__item-submenu-offset text-center"></div>
-                            <div class="menu__item-icon"><img srcset="images/languages/language-1.png, images/languages/language-1@2x.png 2x" src="images/languages/language-1.png" alt=""></div>
-                        <div class="text-center"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModal" data-whatever="@mdo">Product</button></div>
-                    </li>
-                    <li class="menu__item mb-2">
-                        <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
-                        <div class="menu__item-submenu-offset text-center"></div>
-                            <div class="menu__item-icon"><img srcset="images/languages/language-1.png, images/languages/language-1@2x.png 2x" src="images/languages/language-1.png" alt=""></div>
-                        <div class="text-center"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModal" data-whatever="@mdo">Product</button></div>
-                    </li>
-                </ul>
-            </div>
-            <!-- .menu / end -->
-        </div>
-    </div>
-</div>
-</div>
-</div>
-</div>
-
-
-<!--topbar end-->
-
-
-<?php } ?>
-
-
-
-
-
-
-<div class="site-header__middle container">
+                <!-- .topbar -->
+                <div class="site-header__topbar topbar">
+                    <div class="topbar__container container">
+                        <div class="topbar__row">
+                            <div class="topbar__item topbar__item--link"><a class="topbar-link" href="about-us.html">About Us</a></div>
+                            <div class="topbar__item topbar__item--link"><a class="topbar-link" href="contact-us.html">Contacts</a></div>
+                            <div class="topbar__item topbar__item--link"><a class="topbar-link" href="">Store Location</a></div>
+                            <div class="topbar__item topbar__item--link"><a class="topbar-link" href="track-order.html">Track Order</a></div>
+                            <div class="topbar__item topbar__item--link"><a class="topbar-link" href="blog-classic.html">Blog</a></div>
+                            <div class="topbar__spring"></div>
+                            <div class="topbar__item">
+                                <div class="topbar-dropdown">
+                                    <button class="topbar-dropdown__btn" type="button">My Account
+                                        <svg width="7px" height="5px">
+                                            <use xlink:href="images/sprite.svg#arrow-rounded-down-7x5"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="topbar-dropdown__body">
+                                        <!-- .menu -->
+                                        <div class="menu menu--layout--topbar">
+                                            <div class="menu__submenus-container"></div>
+                                            <ul class="menu__list">
+                                                <li class="menu__item">
+                                                    <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                    <div class="menu__item-submenu-offset"></div><a class="menu__item-link" href="account-dashboard.html">Dashboard</a></li>
+                                                <li class="menu__item">
+                                                    <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                    <div class="menu__item-submenu-offset"></div><a class="menu__item-link" href="account-profile.html">Edit Profile</a></li>
+                                                <li class="menu__item">
+                                                    <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                    <div class="menu__item-submenu-offset"></div><a class="menu__item-link" href="account-orders.html">Order History</a></li>
+                                                <li class="menu__item">
+                                                    <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                    <div class="menu__item-submenu-offset"></div><a class="menu__item-link" href="account-addresses.html">Addresses</a></li>
+                                                <li class="menu__item">
+                                                    <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                    <div class="menu__item-submenu-offset"></div><a class="menu__item-link" href="account-password.html">Password</a></li>
+                                                <li class="menu__item">
+                                                    <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                    <div class="menu__item-submenu-offset"></div><a class="menu__item-link" href="account-login.html">Logout</a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- .menu / end -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="topbar__item">
+                                <div class="topbar-dropdown">
+                                    <button class="topbar-dropdown__btn" type="button">Currency: <span class="topbar__item-value">USD</span>
+                                        <svg width="7px" height="5px">
+                                            <use xlink:href="images/sprite.svg#arrow-rounded-down-7x5"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="topbar-dropdown__body">
+                                        <!-- .menu -->
+                                        <div class="menu menu--layout--topbar">
+                                            <div class="menu__submenus-container"></div>
+                                            <ul class="menu__list">
+                                                <li class="menu__item">
+                                                    <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                    <div class="menu__item-submenu-offset"></div><a class="menu__item-link" href="">€ Euro</a></li>
+                                                <li class="menu__item">
+                                                    <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                    <div class="menu__item-submenu-offset"></div><a class="menu__item-link" href="">£ Pound Sterling</a></li>
+                                                <li class="menu__item">
+                                                    <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                    <div class="menu__item-submenu-offset"></div><a class="menu__item-link" href="">$ US Dollar</a></li>
+                                                <li class="menu__item">
+                                                    <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                    <div class="menu__item-submenu-offset"></div><a class="menu__item-link" href="">₽ Russian Ruble</a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- .menu / end -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="topbar__item">
+                                <div class="topbar-dropdown">
+                                    <button class="topbar-dropdown__btn" type="button">Language: <span class="topbar__item-value">EN</span>
+                                        <svg width="7px" height="5px">
+                                            <use xlink:href="images/sprite.svg#arrow-rounded-down-7x5"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="topbar-dropdown__body">
+                                        <!-- .menu -->
+                                        <div class="menu menu--layout--topbar menu--with-icons">
+                                            <div class="menu__submenus-container"></div>
+                                            <ul class="menu__list">
+                                                <li class="menu__item">
+                                                    <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                    <div class="menu__item-submenu-offset"></div>
+                                                    <a class="menu__item-link" href="">
+                                                        <div class="menu__item-icon"><img srcset="images/languages/language-1.png, images/languages/language-1@2x.png 2x" src="images/languages/language-1.png" alt=""></div>English</a>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                    <div class="menu__item-submenu-offset"></div>
+                                                    <a class="menu__item-link" href="">
+                                                        <div class="menu__item-icon"><img srcset="images/languages/language-2.png, images/languages/language-2@2x.png 2x" src="images/languages/language-2.png" alt=""></div>French</a>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                    <div class="menu__item-submenu-offset"></div>
+                                                    <a class="menu__item-link" href="">
+                                                        <div class="menu__item-icon"><img srcset="images/languages/language-3.png, images/languages/language-3@2x.png 2x" src="images/languages/language-3.png" alt=""></div>German</a>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                    <div class="menu__item-submenu-offset"></div>
+                                                    <a class="menu__item-link" href="">
+                                                        <div class="menu__item-icon"><img srcset="images/languages/language-4.png, images/languages/language-4@2x.png 2x" src="images/languages/language-4.png" alt=""></div>Russian</a>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
+                                                    <div class="menu__item-submenu-offset"></div>
+                                                    <a class="menu__item-link" href="">
+                                                        <div class="menu__item-icon"><img srcset="images/languages/language-5.png, images/languages/language-5@2x.png 2x" src="images/languages/language-5.png" alt=""></div>Italian</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- .menu / end -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- .topbar / end -->
+                <div class="site-header__middle container">
                     <div class="site-header__logo">
                         <a href="index.html">
                             <svg xmlns="http://www.w3.org/2000/svg" width="196px" height="26px">
@@ -663,7 +569,7 @@ if (isset($name,$password)) {
                                 <div class="nav-panel__nav-links nav-links">
                                     <ul class="nav-links__list">
                                         <li class="nav-links__item nav-links__item--has-submenu">
-                                            <a class="nav-links__item-link" href="index.php">
+                                            <a class="nav-links__item-link" href="index.html">
                                                 <div class="nav-links__item-body">Home
                                                     <svg class="nav-links__item-arrow" width="9px" height="6px">
                                                         <use xlink:href="images/sprite.svg#arrow-rounded-down-9x6"></use>
@@ -677,7 +583,7 @@ if (isset($name,$password)) {
                                                     <ul class="menu__list">
                                                         <li class="menu__item">
                                                             <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
-                                                            <div class="menu__item-submenu-offset"></div><a class="menu__item-link" href="index.php">Home 1 Slideshow</a></li>
+                                                            <div class="menu__item-submenu-offset"></div><a class="menu__item-link" href="index.html">Home 1 Slideshow</a></li>
                                                         <li class="menu__item">
                                                             <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
                                                             <div class="menu__item-submenu-offset"></div><a class="menu__item-link" href="index-2.html">Home 2 Slideshow</a></li>
@@ -1108,8 +1014,3 @@ if (isset($name,$password)) {
             </div>
         </header>
         <!-- desktop site__header / end -->
-       
- <!-- site__body -->
-<div class="site__body">
-
-

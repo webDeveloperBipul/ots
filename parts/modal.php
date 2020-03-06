@@ -281,7 +281,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header header_light_color">
-                <h6 class="modal-title" id="exampleModalLabel">প্রোডাক্ট যুক্ত করুন</h6>
+                <h6 class="modal-title" id="exampleModalLabel">Add Product</h6>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -290,36 +290,68 @@
                 <form name="myform" id="myForm" method="POST" action="action/product_insert.php" enctype="multipart/form-data" autocomplete="off" onsubmit="return check_blank()">
                     <div class="row ">
                         <div class="col-md-6">
+                        <div class="form-group">
 
+<input name="add_date" type="text"  min="2010-01-01" value="" data-provide="datepicker" id="datepicker" class="form-control"  placeholder="Add Date">
+</div>
                             <div class="form-group" ‍autocomplite="off">
-                                <input autocomplete="off" type="text" class="form-control" name="product_code" placeholder="প্রোডাক্ট কোড">
+                                <input autocomplete="off" type="number" class="form-control" name="product_code" placeholder="Product Code">
                             </div>
                             <div class="form-group">
-                                <input autocomplete="off" type="text" class="form-control" name="sku" placeholder="এস কে ইউ">
+                                <input autocomplete="off" type="text" class="form-control" name="sku" placeholder="SKU">
                             </div>
                             <div class="form-group">
-                                <input autocomplete="off" type="text" class="form-control" name="product_name" placeholder="প্রোডাক্ট এর নাম">
+                                <input autocomplete="off" type="text" class="form-control" name="product_name" placeholder="Product Name">
                             </div>
                             <div class="form-group">
-                                <input autocomplete="off" type="text" class="form-control" name="old_price" placeholder="পূর্বের দাম">
-                            </div>
-                           
-                            <div class="form-group">
-                                <input autocomplete="off" type="text" class="form-control" name="regular_Price" placeholder="বর্তমান দাম">
+                                <input autocomplete="off" type="number" class="form-control" name="old_price" placeholder="Old Price">
                             </div>
                             <div class="form-group">
-                                <input autocomplete="off" type="text" class="form-control" name="weight" placeholder="ওজন">
+                                <input autocomplete="off" type="number" class="form-control" name="regular_price" placeholder="Regular Price">
+                            </div>
+                            
+                            <div class="form-group">
+                                <input autocomplete="off" type="number" class="form-control" name="weight" placeholder="Weight">
                             </div>
 
                             <div class="form-group">
                                 <select class="selectpicker" name="made_in" data-live-search="true">
-                                    <option data-tokens="ketchup mustard">মেইড ইন</option>
+                                    <option value="" data-tokens="">Made In</option>
                                     <?php include('parts/country_name.php'); ?>
                                 </select>
                             </div>
-                            <div class="form-group">
-                                <select class="selectpicker"  name="size" multiple data-live-search="true">
-                                    <option  value="" selected disabled onchange="changeMe(this)">সাইজ</option>
+
+
+
+
+
+                              
+
+                        </div>
+
+                        <div class="col-md-6">
+
+                        <div class="form-group">
+                                <select class="selectpicker" name="color[]" multiple>
+                                    <option  value="" disabled selected>Color</option>
+                                    <option  value="RED" data-tokens="RED">RED</option>
+                                    <option  value="green" data-tokens="GREEN">GREEN</option>
+                                    <option  value="blue" data-tokens="BLUE">BLUE</option>
+                                    <option  value="yellow" data-tokens="YELLOW">YELLOW</option>
+                                    <option  value="black" data-tokens="BLACK">BLACK</option>
+                                    <option  value="white" data-tokens="WHITE">WHITE</option>
+                                    <option  value="pink" data-tokens="PINK">PINK</option>
+                                </select>
+                            </div>
+
+
+                       
+
+                        <div class="form-group">
+
+                            
+                                <select class="selectpicker"  name="size[]" size = 6 multiple>
+                                    <option  value="" selected disabled>Size</option>
                                     <option  value="XS" data-tokens="XS">XS</option>
                                     <option  value="S" data-tokens="s">S</option>
                                     <option  value="M" data-tokens="m">M</option>
@@ -328,75 +360,74 @@
                                     <option  value="XXL" data-tokens="xxl">XXL</option>
                                 </select>
                             </div>
-
-
-
                             <div class="form-group">
-                                <select class="selectpicker" name="color" multiple>
-                                    <option  value="" disabled onchange="changeMe(this)" selected>কালার</option>
-                                    <option  value="RED" data-tokens="RED">RED</option>
-                                    <option  value="green" data-tokens="GREEN">GREEN</option>
-                                    <option  value="blue" data-tokens="BLUE">BLUE</option>
-                                    <option  value="yellow" data-tokens="YELLOW">YELLOW</option>
-                                    <option  value="black" data-tokens="BLACK">BLACK</option>
-                                    <option  value="white" data-tokens="WHITE">WHITE</option>
-                                    <option  value="pink" data-tokens="PINK">PINK</option>
-
+                                <select class="selectpicker" name="min_order">
+                                    <option  value="" selected disabled onchange="changeMe(this)">Minimum Order</option>
+                                    <option  value="1" data-tokens="XS">1</option>
+                                    <option  value="2" data-tokens="s">2</option>
+                                    <option  value="3" data-tokens="m">3</option>
+                                    <option  value="4" data-tokens="l">4</option>
+                                    <option  value="5" data-tokens="xl">5</option>
+                                    <option  value="6" data-tokens="xxl">6</option>
+                                    <option  value="12" data-tokens="xxl">12</option>
+                                    <option  value="20" data-tokens="xxl">20</option>
+                                    <option  value="24" data-tokens="xxl">24</option>
+                                    <option  value="50" data-tokens="xxl">50</option>
+                                    <option  value="100" data-tokens="xxl">100</option>
+                                    <option  value="150" data-tokens="xxl">150</option>
+                                    <option  value="200" data-tokens="xxl">200</option>
+                                    <option  value="250" data-tokens="xxl">250</option>
+                                    <option  value="300" data-tokens="xxl">300</option>
+                                    <option  value="500" data-tokens="xxl">500</option>
+                                    <option  value="1000" data-tokens="xxl">1000</option>
                                 </select>
                             </div>
-
-                        </div>
-
-                        <div class="col-md-6">
 
          
                             <div class="form-group">
                                 <select class="selectpicker" name="shipping_charge">
-                                    <option value="" selected disabled onchange="changeMe(this)">শিপিং চার্জ</option>
-                                    <option value="free" data-tokens="free">ফ্রি</option>
-                                    <option value="50" data-tokens="">৫০</option>
-                                    <option value="100" data-tokens="">১০০</option>
-                                    <option value="150" data-tokens="">১৫০</option>
-                                    <option value="200" data-tokens="">২০০</option>
-                                    <option value="250" data-tokens="">২৫০</option>
-                                    <option value="300" data-tokens="">৩০০</option>
+                                    <option value="" selected disabled onchange="changeMe(this)">Shipping Charge</option>
+                                    <option value="free" data-tokens="free">Free</option>
+                                    <option value="50" data-tokens="">50</option>
+                                    <option value="100" data-tokens="">100</option>
+                                    <option value="150" data-tokens="">150</option>
+                                    <option value="200" data-tokens="">200</option>
+                                    <option value="250" data-tokens="">250</option>
+                                    <option value="300" data-tokens="">300</option>
 
                                 </select>
                             </div>
 
                             <div class="form-group style">
                                 <select name="catagory" id="catagory" size="1" data-live-search="true">
-                                    <option value="" selected="selected">ক্যাটাগরি</option>
+                                    <option value="" selected="selected">Catagory</option>
                                 </select>
                             </div>
 
                             <div class="form-group">
                                 <select name="sub_catagory" id="sub_catagory" size="1">
-                                    <option name="" value="" selected="selected">সাব ক্যাটাগরি</option>
+                                    <option name="" value="" selected="selected">Sub-Catagory</option>
                                 </select>
                             </div>
                             <div class="form-group">
                                 <select name="sub_sub_catagory" id="sub_sub_catagory" size="1">
-                                    <option value="" selected="selected">উপ-সাব ক্যাটাগরি</option>
+                                    <option value="" selected="selected">Sub-Sub-Catagory</option>
                                 </select>
                             </div>
 
                             <div class="form-group">
 
-                                <input name="image" type="file" class="form-control" id="weight" placeholder="ছবি">
+                                <input name="image" type="file" class="form-control" id="weight" placeholder="Image">
                             </div>
-                            <div class="form-group">
-
-                                <input name="add_date" type="text" class="form-control" id="weight" placeholder="তারিখ">
-                            </div>
+                            
 
                         </div>
 
                     </div>
                     <div class="modal-footer">
 
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">বাতিল</button>
-                        <button type="submit" class="btn btn-primary">সাবমিট</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="submit" name="image" class="btn btn-primary">Submit</button>
                     </div>
                 </form>
             </div>

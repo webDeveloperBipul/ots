@@ -109,6 +109,7 @@
     <!-- js -->  
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="vendor/owl-carousel/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.js">
     <script src="vendor/nouislider/nouislider.min.js"></script>
 
     <script src="vendor/select2/js/select2.min.js"></script>
@@ -123,6 +124,7 @@
     <script defer src="vendor/fontawesome/js/solid.js"></script>
     <script defer src="vendor/fontawesome/js/fontawesome.min.js"></script>
     <script defer src="vendor/select/bootstrap-select.min.js"></script>
+
     <script>
         svg4everybody();
     </script>
@@ -149,9 +151,13 @@
         responsive : true
 
       });
+
+      $('#datepicker').datepicker({
+        format: 'dd-mm-yyyy'
+      });
     });
+ </script>
  
-  </script>
 <script type="text/javascript">
     function changeMe(sel)
     {
